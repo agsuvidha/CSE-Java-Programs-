@@ -8,7 +8,6 @@ class app3
             Class.forName("com.mysql.cj.jdbc.Driver");  
             Connection con=DriverManager.getConnection(  
             "jdbc:mysql://localhost:3306/","root","root1234");  
-            //here sonoo is database name, root is username and password  
             Statement stmt=con.createStatement();  
             ResultSet rs=stmt.executeQuery("select * from mydemo.user");  
             while(rs.next())
